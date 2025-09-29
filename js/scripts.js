@@ -1,8 +1,9 @@
+
 // jQUERY
 $(document).ready(function () {
     $('#mobile_btn').on('click', function (){
         $('#mobile_menu').toggleClass('active'); 
-        $('mobile_btn').find('i').toggleClass('fa-x');
+        $('#mobile_btn').find('i').toggleClass('fa-x');
        });
 
 
@@ -14,7 +15,9 @@ $(document).ready(function () {
 
             const header = $('header');
            
-            const scrollPosition = $(window).scrollTop() - header.outerHeight();
+            // Ajuste para considerar a altura do cabeçalho fixo
+            const headerHeight = header.outerHeight();
+            const scrollPosition = $(window).scrollTop();
 
              let activeSectionIndex = 0;
 
@@ -33,7 +36,8 @@ $(document).ready(function () {
 
 
                 const section = $(this);
-                const sectionTop = section.offset().top - 96;
+                // Ajuste para considerar a altura do cabeçalho fixo ao calcular a posição da seção
+                const sectionTop = section.offset().top - headerHeight - 1; // Subtrai 1px para garantir a transição suave
                 const sectionBottom = sectionTop + section.outerHeight();
 
                 if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
@@ -86,3 +90,4 @@ $(document).ready(function () {
        
 
 });
+
