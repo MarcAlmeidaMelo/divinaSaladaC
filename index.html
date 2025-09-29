@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+<!-- Link com css -->
+   
+    <link rel="stylesheet" href="./css/style.css"> 
+  
+<!-- Jquery -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- biblioteca scrollreveal  -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+
+</head>
+
+<body>
+
+
+    <header>  <!--LOGO, BOTÃO, MENU-->
+            <nav id="nav_bar">
+            
+                <!-- logo burger -->
+                
+                <img class="nav_logo" src="./assets/unnamed(4).png" alt=""> 
+                     
+        
+                <ul id="nav_list">
+                    <li class="nav_list_item active">
+
+                        <a href="#home">Início</a>
+
+                    </li>
+
+                    <li class="nav_list_item">
+
+                        <a href="#menu">Cardápio</a>
+
+                    </li>
+
+                    <li class="nav_list_item">
+
+                        <a href="#testimonials">Avaliações</a>
+
+                    </li>
+
+                </ul>
+
+                <button class="button_default" onClick="window.open('https://wa.me/5579999570719','_blank')">Peça Aqui!</button>
+
+                <button id="mobile_btn">
+
+                    <i class="fa-solid fa-bars"></i> <!--Botão menu mobile-->
+
+                </button>
+
+            </nav>
+
+            <div id="mobile_menu" >
+
+                <ul id="mobile_nav_list">
+
+                    <li class="nav_list_item"> 
+
+                        <a href="#home">Início</a>
+                        
+                    </li>
+
+                    <li class="nav_list_item">
+
+                        <a href="#menu">Cardápio</a>
+                    </li>
+
+                    <li class="nav_list_item">
+
+                        <a href="#testimonials">Avaliações</a>
+
+                    </li>
+                
+                </ul>
+
+                <button class="button_default" onClick="window.open('https://wa.me/5579999570719','_blank')">Peça Aqui!</button>
+
+            </div>          
+
+
+    </header>
+
+    <main id="content">
+        
+        <section id="home"> <!--caught your attention | banner -->
+
+            <div class="shape"></div>
+
+            <div id="cta">
+
+                <h1 class="title">
+
+                     Divina Salada 
+                    
+                   <span> Refeição com Sabor e Nutrição  </span>
+                                     
+                 </h1>
+
+                 <p class="description">
+                    Todo dia, a partir das 8h, um cardápio saudável feito para você. 
+                </p>
+
+                <div id="cta_buttons">
+
+                    <a href="https://drive.google.com/uc?export=view&id=1FklG7fg0isQ57qi3fAvI5Q87SNJmrqNY
+" class="button_default" target="_blank"> Ver Cardápio </a>
+                    
+                    <a href="tel:+5579999570719" id="phone_button">
+
+                        <button class="button_default">
+                            
+                            <i class="fa-solid fa-phone"></i>
+                            
+
+                        </button> 
+                        
+                        (79) 9 9957-0719
+
+                    </a>
+
+                </div>
+
+                <div class="media_buttons">
+
+                    <a href="https://wa.me/5579999570719" target="_blank">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </a>
+
+                     <a href="https://www.instagram.com/divina.salada?igsh=Z3N5ZHh6d2NzdG5q" target="_blank">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+             
+                </div>
+
+            </div>
+
+            <div id="banner">
+
+                <image src="./assets/hero.png" alt=""></image>
+
+
+            </div>
+
+        </section>
+
+        <section id="menu">
+
+            <h2 class="section-title"> Cardápio</h2>
+            <h3 class="section-subtitle">Nossos pratos especiais</h3>
+
+            <div id="dishes">
+
+                <div class="dish">
+
+                    <div class="dish-heart">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
+
+                    <img src="./assets/dish.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+
+                        Lore Ipsum                    
+                    
+                    </h3>
+
+                    <span class="dish-description">
+
+                        Lorem ipum dolor sit amet consectetur
+
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                </div>
+
+                <div class="dish">
+
+                    <div class="dish-heart">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
+
+                    <img src="./assets/dish2.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+
+                        Lore Ipsum                    
+                    
+                    </h3>
+
+                    <span class="dish-description">
+
+                        Lorem ipum dolor sit amet consectetur
+
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+
+                </div>
+
+            <div class="dish">
+
+                    <div class="dish-heart">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
+
+                    <img src="./assets/dish3.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+
+                        Lore Ipsum                    
+                    
+                    </h3>
+
+                    <span class="dish-description">
+
+                        Lorem ipum dolor sit amet consectetur
+
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                </div>
+
+            <div class="dish">
+
+                    <div class="dish-heart">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
+
+                    <img src="./assets/dish4.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+
+                        Lore Ipsum                    
+                    
+                    </h3>
+
+                    <span class="dish-description">
+
+                        Lorem ipum dolor sit amet consectetur
+
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                
+                </div>
+
+                             
+            </div>
+        
+        </section>
+
+        <section id="testimonials">
+
+            <img src="./assets/chef.png" id="testimonials_chef" alt="">
+
+            <div id="testimonials_content">
+
+                <h2 class="section-title"> Depoimentos </h2>
+
+                <h3 class="section-subtitle"> O que os clientes falam sobre nós </h3>
+
+                <div id="feedbacks">
+
+                    <div class="feedback">
+
+                        <img src="./assets/hq720.jpg" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+
+                            <p >
+                                Jailton Silva
+
+                                <span class="estrelinha">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    
+                                </span>
+
+                            </p>
+
+                            <p>
+                                "Arrasou!"
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="feedback">
+
+                        <img src="./assets/hq721.jpg" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+
+                            <p>
+                               Marcel Melo
+
+                                <span class="estrelinha">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    
+                                </span>
+
+                            </p>
+
+                            <p>
+                                "Muito BOOOM! Site top ++"
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <button class="button_default" onClick="window.open('https://restaurantguru.com.br/Divina-Salada-Aracaju', '_blank')"> Ver mais avaliações </button>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <img src="./assets/wave.svg" alt="">
+
+        <div id="footer_items">
+
+            <span id="copyright">
+
+                &copy 2025 Marcel Melo
+
+            </span>
+            
+            <p>R. Boa Vista, 470 - Suíça, Aracaju - SE, 49052-270</p>
+
+            <div class="media_buttons">
+
+                <a href="https://wa.me/5579999570719" target="_blank">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </a>
+
+                <a href="https://www.instagram.com/divina.salada?igsh=Z3N5ZHh6d2NzdG5q" target="_blank">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+               
+
+            </div>   
+
+        </div>
+
+
+
+    </footer>
+
+    <script src="/js/scripts.js"></script>
+    
+</body>
+</html>
