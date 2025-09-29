@@ -1,5 +1,29 @@
 
 // jQUERY
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    // Seleciona todos os links dentro dos itens da lista de navegação
+    const navLinks = document.querySelectorAll('.nav-list .nav-item a');
+
+    // Função para lidar com o clique
+    function handleNavClick(event) {
+        // 1. Remove a classe 'active' de todos os links
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+
+        // 2. Adiciona a classe 'active' apenas ao link que foi clicado
+        event.currentTarget.classList.add('active');
+    }
+
+    // 3. Adiciona o "ouvinte de clique" a cada link da navegação
+    navLinks.forEach(link => {
+        link.addEventListener('click', handleNavClick);
+    });
+
+});
+
 $(document).ready(function () {
     $('#mobile_btn').on('click', function (){
         $('#mobile_menu').toggleClass('active'); 
